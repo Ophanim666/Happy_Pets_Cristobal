@@ -1,0 +1,104 @@
+/* ESTE IMPORT GOOGLE APIS, ES UN IMPORT DE FUENTES DE LETRAS SACADO DE GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url(menu.css);
+@import url(banner.css);
+@import url(blog.css);
+@import url(info.css);
+@import url(formulario.css);
+@import url(comentarios.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ESTE FONT ACOMPAÑA AL IMPORT DE GOOGLE FONTS  */
+body{
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: black;
+    color: #fff;
+
+    /* ESTO DE AQUI NOS YUDA A QUE EL MENU HEADER */
+    /* SIEMPRE ESTE PEGADO Y POR DELANTE DE LOS DEMAS ELEMENTOS */
+    /* MUY UTIL PARA LA FUNCION DE LA RESPONSIBIDAD */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+
+h1{
+    float: left;
+}
+
+/* ESTO NOS SIRVE PARA ORDENAR EL CONTENEDOR DE EL HEADER */
+/* ASI SE ACOMODA A EL HEADER Y NO QUEDA CORIDO LA POSICION */
+header .contenedor{
+    display: table;
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#Bienvenidos{
+    text-align: center;
+}
+
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.copy{
+    font-size: 20px;
+}
+
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a{
+    color: black;
+    text-decoration: none;
+}
+
+/* ESTO ES UNA PRUEBA QUE REALICE PARA LA PAGINA A VISTA DE ESCRITORIO */
+/* PERO NO ME GUSTO, PERO DEJAR EL CODIGO COMENTADO POR SI CAMBIO DE OPINION */
+/* PROFE PUEDE DESCOMENTARLO Y VER EL CAMBIO QUE REALIZA */
+/*
+@media (min-width: 1024px){ 
+    .contenedor{
+        width: 1000px;
+    }
+}
+*/
+
+/* CON ESTO LOS ICONOS A PARTIR DE 768PX SE MOVERAN AL LATERAL INFERIOR DE LA PAGINA */
+@media (min-width: 768px){
+    .sociales{
+        width: auto;
+    }
+    footer .contenedor{
+        justify-content: space-between;
+    }
+}
+
+
+h5{
+    font-size: 30px;
+    margin-bottom: 20px;
+}

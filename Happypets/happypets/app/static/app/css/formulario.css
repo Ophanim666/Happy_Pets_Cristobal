@@ -1,0 +1,21 @@
+
+.controles{
+    width: 100%;
+    background: black;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid white;
+    font-size: 18px;
+    color: white;
+}
+
+ .botones{
+    width: 10%;
+    background: black;
+    border: none;
+    padding: 15px;
+    color: white;
+    margin: 16px 0;
+    font-size: 20px;
+}

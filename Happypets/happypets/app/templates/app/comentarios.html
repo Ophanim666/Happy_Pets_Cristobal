@@ -1,0 +1,62 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block js %}
+<script src="js/comentarios.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+{% endblock %}
+
+{% block css %}
+{% endblock %}
+
+{% block contenido %}
+<section id="Bienvenidos">
+    <h2>MANTENTE INFORMADO DE LO QUE SUCEDE EN HAPPY PETS</h2>
+    <p>Estos son algunos de los comentarios que nos llegan de personas que han comprado en nuestra tienda</p>
+</section>
+<section id="comentarios">
+    <h5>Jente que a comprado en la tienda</h5>
+    <div class="contenedor">
+        <div class="iniciador">
+            <button id="btn-cargar">Cargar Información</button>            
+        </div>
+            
+        <div class="cuerpo">
+            <div id="info">
+                <h1></h1>
+            </div>
+        </div>   
+        
+    </div>
+</section>
+
+<section id="info">
+    <h3>FELICES HAPPY PETS</h3>
+    <div class="contenedor">
+        <div class="info-productos">
+            <img src="{% static 'app/img/BLOG/blog_abajo1.jpg' %}" alt="">
+            <h4>Los hermanos tom y luna con sus nuevos amigos</h4>
+        </div>
+        <div class="info-productos">
+            <img src="{% static 'app/img/BLOG/blog_abajo2.jpg' %}" alt="">
+            <h4>El serio luis con sus nuevos amigos</h4>
+        </div>
+        <div class="info-productos">
+            <img src="{% static 'app/img/BLOG/blog_abajo3.jpg' %}" alt="">
+            <h4>Chop encontro a su nuevo compañero</h4>
+        </div>
+        <div class="info-productos">
+            <img src="{% static 'app/img/BLOG/blog_abajo4.jpg' %}" alt="">
+            <h4>Kira encontro a su nueva mejor amiga</h4>
+        </div>
+
+    </div>
+
+</section>
+{% endblock %}

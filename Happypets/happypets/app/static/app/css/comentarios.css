@@ -1,0 +1,10 @@
+#btn-cargar{
+    display: block;
+    width: 140px;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 3px solid black; 
+}
